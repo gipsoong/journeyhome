@@ -1,9 +1,10 @@
 import React from "react";
 
-function From() {
+function Form() {
     return (
         <form>
             <input type="text"></input>
+            <button type="submit">Calculate</button>
         </form>
     )
 }

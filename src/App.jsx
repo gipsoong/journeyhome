@@ -13,6 +13,7 @@ function App() {
     <>
       <div>
         <h1>Mortgage Calculator</h1>
+        <Form />
       </div>
     </>
   )
