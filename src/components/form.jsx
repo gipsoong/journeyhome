@@ -10,10 +10,12 @@ function Form() {
     const [interestRate, setInterestRate] = useState("");
     const [loanDuration, setLoanDuration] = useState("");
     const [monthlyPayment, setMonthlyPayment] = useState(0);
+    const [actualDownPayment, setActualDownPayment] = useState("");
 
     function calculateLoanAmount() {
         setLoanAmount(homeValue - downPayment);
-        return loanAmount;
+        setActualDownPayment(homeValue * 0.2)
+        return loanAmount, actualDownPayment;
     }
     
     function calculateMonthlyPayment() {
@@ -38,7 +40,7 @@ function Form() {
     return (
         <form onSubmit={(e)=> e.preventDefault()}>
             <FormInputGroup 
-                text="Home Value" 
+                text="Price of Property" 
                 icon={<CiBadgeDollar />}
                 placeholder={"Enter the value of the flat"}
                 onKeyUp={calculateLoanAmount}
@@ -52,6 +54,13 @@ function Form() {
                 onKeyUp={calculateLoanAmount}
                 value={downPayment}
                 onInput={(e) => setDownPayment(e.target.value)}
+            />
+            <FormInputGroup 
+                text="Actual Down Payment" 
+                icon={<CiBadgeDollar />}
+                placeholder={"Actual down payment"}
+                readOnly={true}
+                value={actualDownPayment}
             />
             <FormInputGroup 
                 text="Interest Rate %" 

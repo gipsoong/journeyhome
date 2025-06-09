@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <h1> <FcHome />Mortgage Calculator</h1>
+        <h1> <FcHome />Finance your flat</h1>
         <Form />
       </div>
     </>
