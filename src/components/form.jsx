@@ -13,8 +13,10 @@ function Form() {
     const [actualDownPayment, setActualDownPayment] = useState("");
 
     function calculateLoanAmount() {
-        setLoanAmount(homeValue - downPayment);
-        setActualDownPayment(homeValue * 0.2)
+        setActualDownPayment(0.2 * homeValue)
+        console.log(actualDownPayment)
+        setLoanAmount(homeValue - actualDownPayment);
+        console.log(homeValue - actualDownPayment)
         return loanAmount, actualDownPayment;
     }
     
@@ -47,14 +49,14 @@ function Form() {
                 value={homeValue}
                 onInput={(e) => setHomeValue(e.target.value)}
             />
-            <FormInputGroup 
+            {/* <FormInputGroup 
                 text="Down Payment" 
                 icon={<CiBadgeDollar />}
                 placeholder={"Enter your funds"}
                 onKeyUp={calculateLoanAmount}
                 value={downPayment}
                 onInput={(e) => setDownPayment(e.target.value)}
-            />
+            /> */}
             <FormInputGroup 
                 text="Actual Down Payment" 
                 icon={<CiBadgeDollar />}
