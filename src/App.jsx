@@ -2,17 +2,25 @@ import { useState } from 'react'
 import './App.css'
 import { FcHome } from "react-icons/fc"
 import Form from './components/form'
-
-Form
+import {Route, Routes} from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <h1> <FcHome />Finance your flat</h1>
-        <Form />
+    <><Navbar/>
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+        <Footer/>
       </div>
     </>
   )
