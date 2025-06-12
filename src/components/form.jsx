@@ -58,7 +58,7 @@ function Form() {
                 onInput={(e) => setDownPayment(e.target.value)}
             /> */}
             <FormInputGroup 
-                text="Actual Down Payment" 
+                text="Down Payment" 
                 icon={<CiBadgeDollar />}
                 placeholder={"Actual down payment"}
                 readOnly={true}
