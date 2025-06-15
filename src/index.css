@@ -115,3 +115,8 @@ nav {
   position: sticky; top: 0;
   width: 100%;
 }
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
