@@ -1,5 +1,11 @@
 import Navbar from "../components/Navbar";
 import '../styles/About.css'
+import { IoIosArrowDown } from "react-icons/io";
+import { SlArrowDown } from "react-icons/sl";
+import { RxArrowDown } from "react-icons/rx";
+
+
+
 
 export default function About() {
     return (
@@ -11,12 +17,15 @@ export default function About() {
 
             <div className="about-wrapper">
                 <div className="about-intro">
-                    <div>Copy here</div>
-                    <div>Image here</div>
+                    
+                    <p>Through research, we have observed that a large portion of aspiring homeowners in Singapore felt that the financials regarding properties were confusing. Thus, we set out to address this issue with this calculator.</p>
+                    
+                    <img src="https://www.investopedia.com/thmb/tI16JK94oVohu5tUgXq9coa-ehU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/statistics-ae8f1320de174c279eeeee49c4087917.jpg" alt="" />
                 </div>
 
                 <div className="about-about section-padding">
                     <h2>Here's how to use the calculator, as easy as 1, 2,3... and 4!</h2>
+                    <RxArrowDown className="react-icon-styling"/>
                     
                 </div>
 

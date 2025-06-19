@@ -4,13 +4,23 @@
   justify-content: space-between;
 }
 
+.about-hero svg {
+    padding-top: 1em;
+}
+
+.about-hero svg {
+    height: 7em;
+}
+
 .about-steps {
+    width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .about-steps svg{
-  height: 30em;
+  height: 25em;
+  padding-right: 2em;
 }
 
 .about-step-header {
@@ -20,7 +30,7 @@
 .about-step {
   display: flex;
   justify-items: center;
-  padding: 25px;
+  padding-left: 2em;
 }
 
 .about-steps-row {
@@ -32,5 +42,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  margin-left: 3em;
+  /* padding-left: 3em; */
+}
+
+.about-about h2 {
+    padding-bottom: 0.5em;
 }

@@ -208,3 +208,7 @@ div[class$='hero'] {
 .section-padding {
   padding: 100px;
 }
+
+.react-icon-styling {
+  font-size: 3em;
+}
