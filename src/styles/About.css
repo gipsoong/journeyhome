@@ -1,0 +1,36 @@
+.about-intro {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-steps svg{
+  height: 25em;
+}
+
+.about-step-header {
+  display: flex;
+}
+
+.about-step {
+  display: flex;
+  justify-items: center;
+  padding: 25px;
+}
+
+.about-steps-row {
+  display: flex;
+}
+
+.about-step-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 2em;
+}

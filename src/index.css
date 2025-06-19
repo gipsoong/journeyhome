@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -25,6 +30,8 @@ a:hover {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
   margin: 0;
   display: flex;
   place-items: center;
@@ -84,7 +91,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 1rem 3rem;
+  padding: 1rem 5rem;
 }
 
 .nav a {
@@ -154,5 +161,50 @@ footer div {
 .content.show {
   height: auto;
   max-height: 9999px;
-  transition: all 0.5s cubic-bezier(1,0,1,0);
+  transition: all 0.75s cubic-bezier(1,0,1,0);
+}
+
+.contact-wrapper form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-wrapper form input {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border:1px solid rgb(220, 220, 220);
+}
+
+.contact-wrapper form input &:focus {
+  border: 2px solid rgba(0, 206, 158, 1);
+}
+
+.contact-wrapper form label {
+  margin-top: 1rem;
+}
+
+.contact-wrapper form input [type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: rgb(249, 105, 14);
+  color: white;
+  border: none;
+}
+
+.contact-wrapper textarea {
+  width: 100%;
+}
+
+div[class$='hero'] {
+  padding: 150px;
+}
+
+.section-padding {
+  padding: 100px;
 }

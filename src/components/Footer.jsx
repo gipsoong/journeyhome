@@ -7,41 +7,41 @@ export default function Footer() {
           <li>
             <a
               as="a"
-              href="#"
+              href="/"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
             >
-              About Us
+              Home
             </a>
           </li>
           <li>
             <a
               as="a"
-              href="#"
+              href="/about"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
             >
-              License
+              About
             </a>
           </li>
           <li>
             <a
               as="a"
-              href="#"
+              href="/contact"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
             >
-              Contribute
+              Contact
             </a>
           </li>
           <li>
             <a
               as="a"
-              href="#"
+              href="/faq"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
             >
-              Contact Us
+              FAQ
             </a>
           </li>
         </ul>
