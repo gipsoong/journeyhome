@@ -10,7 +10,7 @@
 }
 
 .about-steps svg{
-  height: 25em;
+  height: 30em;
 }
 
 .about-step-header {
@@ -32,5 +32,5 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  margin-left: 2em;
+  margin-left: 3em;
 }
