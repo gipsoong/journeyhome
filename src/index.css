@@ -85,8 +85,8 @@ body {
 }
 
 .nav {
-  background-color: beige;
-  color: black;
+  background-color: #7a73ff;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,19 +103,24 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .site-title {
   font-size: 2rem;
 }
 
+.nav li {
+  transition: all .2s ease-in-out;
+}
+
 .nav li.active {
-  background-color: pink;
+  color: #80E9FF;
 }
 
 .nav li:hover {
-  background-color: pink;
+  transform: scale(1.15);
+  color: #80E9FF;
 }
 
 nav {
@@ -211,4 +216,31 @@ div[class$='hero'] {
 
 .react-icon-styling {
   font-size: 3em;
+}
+
+.section-contrast {
+  background-color: #7a73ff;
+}
+
+footer, footer div {
+  background-color: slategrey;
+  color: white;
+}
+
+.floating {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+    }
+
+  50% {
+      transform: translateY(0.15em);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
 }
