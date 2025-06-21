@@ -6,6 +6,7 @@ export default function FAQ() {
             <div className="faq=hero">
                 <h1>Frequently Asked Questions</h1>
             </div>
+            
             <Accordion/>
         </div>
     )

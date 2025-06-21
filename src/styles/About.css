@@ -96,10 +96,3 @@
     padding-bottom: 0.25em;
     color: #7a73ff;
 }
-
-.about-cta {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  color: white;
-}

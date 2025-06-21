@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../index.css"
+import "../styles/Contact.css"
 
 
 const data = [

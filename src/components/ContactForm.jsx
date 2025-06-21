@@ -23,13 +23,13 @@ export const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} className='input-group'>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" className='form-control'/>
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" className='form-control'/>
       <label>Message</label>
-      <textarea name="message" />
+      <textarea name="message" className='form-control'/>
       <input type="submit" value="Send" />
     </form>
   );

@@ -135,14 +135,10 @@ footer div {
 
 .accordion-parent {
   display: flex;
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
-}
-
-.accodion {
-  width: 500px;
 }
 
 .item {
@@ -243,4 +239,31 @@ footer, footer div {
   100% {
       transform: translateY(0);
   }
+}
+
+.pre-footer-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #7a73ff;
+  border: none;
+  transition: all .2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #7a73ff;
+  border: none;
+  transform: scale(1.02);
+}
+
+.p-top-100 {
+  padding-top: 100px;
+}
+
+.accordion-parent {
+  width: 100%;
 }

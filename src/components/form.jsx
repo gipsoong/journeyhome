@@ -40,7 +40,7 @@ function Form() {
   
     
     return (
-        <form onSubmit={(e)=> e.preventDefault()}>
+        <form className="section-padding" onSubmit={(e)=> e.preventDefault()}>
             <FormInputGroup 
                 text="Price of Property" 
                 icon={<CiBadgeDollar />}

@@ -9,13 +9,14 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import FAQ from './pages/FAQ'
+import { RxArrowRight } from 'react-icons/rx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <><Navbar/>
-      <div className='container'>
+      <div className='main'>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
@@ -23,6 +24,12 @@ function App() {
           <Route path='/faq' element={<FAQ/>}/>
         </Routes>
       </div>
+
+      <div className='pre-footer-cta section-padding section-contrast'>
+        <h2>Ready to start? Let's go!</h2>
+        <RxArrowRight className="react-icon-styling"/>
+      </div>
+      
     <Footer/>
     </>
   )
