@@ -24,8 +24,19 @@ export default function Home() {
                 <div className="section-title p-top-100">
                     <span>Let's go! <FcAdvertising /></span>
                 </div>
+                
+                <motion.div 
+                variants={fadeIn("up", 0.2)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{once: false, amount: 0.7}}
+                >
 
-                <Form></Form>
+                    <Form></Form>
+
+                </motion.div>
+
+                
                 
                 <div className="about-intro">
 

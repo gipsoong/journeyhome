@@ -142,9 +142,10 @@ footer div {
 }
 
 .item {
-  background: #f0ebe1;
+  background: #7a73ff;
   margin-bottom: 5px;
   padding: 10px 20px;
+  color: white;
 }
 
 .content {
