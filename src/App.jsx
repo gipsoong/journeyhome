@@ -27,7 +27,7 @@ function App() {
 
       <div className='pre-footer-cta section-padding section-contrast'>
         <h2>Ready to start? Let's go!</h2>
-        <RxArrowRight className="react-icon-styling"/>
+        <a href="/" className='color-white'><RxArrowRight className="react-icon-styling"/></a>
       </div>
       
     <Footer/>
